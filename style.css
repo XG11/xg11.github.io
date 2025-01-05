@@ -5,16 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Full-Screen Layout */
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: 'Georgia', serif;
-    color: #333;
     background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
 }
 
+/* Flexbox for Full-Screen Layout */
 body {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Navigation Tabs */
+/* Tabs Navigation */
 .tabs {
     list-style: none;
     display: flex;
@@ -51,8 +51,8 @@ header h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
     font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 .tab-button.active {
@@ -65,10 +65,7 @@ header h1 {
 
 /* Main Content */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
+    flex: 1; /* Makes main content expand */
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -77,30 +74,32 @@ main {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Tab Content */
 .tab-content {
-    display: none;
-    margin-top: 1.5rem;
+    display: none; /* Initially hidden */
 }
 
 .tab-content.active {
-    display: block;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #ddd;
+    display: block; /* Display active content */
 }
 
 /* Footer */
 footer {
     background: #f4f4f4;
-    color: #333;
     text-align: center;
     padding: 1.5rem 0;
     font-size: 0.9rem;
     border-top: 1px solid #ddd;
     margin-top: auto; /* Push footer to bottom */
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
