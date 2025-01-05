@@ -164,3 +164,11 @@ footer a:hover {
         height: 400px; /* Adjust resume height for smaller screens */
     }
 }
+
+
+.disclaimer {
+    font-size: 0.75rem; /* Extra small font size */
+    color: #666666; /* Subtle gray color for less emphasis */
+    margin-top: 1rem; /* Adds spacing from previous content */
+    text-align: center; /* Center-align for a balanced look */
+}
