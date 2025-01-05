@@ -1,111 +1,29 @@
-/* General Reset 1/5/2025 10:07AM*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Georgia', serif;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
-    background: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styles */
-header {
-    background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    color: #222;
-    margin-bottom: 0.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* General Reset 1/5/2025 10:11AM*/
+.tabs {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #555;
-    font-size: 1rem;
-    font-weight: normal;
-    transition: color 0.2s ease;
-}
-
-nav ul li a:hover {
-    color: #000;
-}
-
-/* Main Content */
-main {
-    padding: 2rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    font-size: 1.5rem;
-    color: #222;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.2rem;
-}
-
-section p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #444;
-}
-
-/* Footer */
-footer {
+.tab-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
     background: #f4f4f4;
-    border-top: 1px solid #ddd;
-    color: #666;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
-/* Links */
-a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.2s ease;
+.tab-button.active {
+    background: #007BFF;
+    color: white;
 }
 
-a:hover {
-    color: #0056b3;
+.tab-content {
+    display: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
+.tab-content.active {
+    display: block;
 }
