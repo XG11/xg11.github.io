@@ -8,7 +8,7 @@
 /* Full-Screen Layout */
 html, body {
     height: 100%;
-    font-family: 'EB Garamond', serif; /* Academic font */
+    font-family: 'EB Garamond', serif; /* Academic font throughout */
     background-color: #ffffff; /* Clean white background */
     color: #333333; /* Neutral text color */
     line-height: 1.8;
@@ -30,11 +30,11 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
-    font-weight: normal;
+    font-size: 2.2rem;
+    font-weight: 500; /* Medium weight for a professional look */
     color: #222222;
     margin-bottom: 0.5rem;
-    font-family: 'Times New Roman', Times, serif; /* Classic academic title font */
+    font-family: 'EB Garamond', serif; /* Elegant academic style */
 }
 
 /* Navigation Tabs */
@@ -55,12 +55,13 @@ header h1 {
     font-size: 1rem;
     cursor: pointer;
     transition: border-color 0.3s ease, color 0.3s ease;
+    font-family: 'EB Garamond', serif; /* Match header font */
 }
 
 .tab-button.active {
     color: #000000; /* Highlight active tab */
     border-bottom-color: #000000;
-    font-weight: bold;
+    font-weight: 500; /* Medium weight for emphasis */
 }
 
 .tab-button:hover {
@@ -74,7 +75,7 @@ main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
-    font-family: 'Georgia', serif; /* Academic body font */
+    font-family: 'Georgia', serif; /* Academic body font for readability */
     font-size: 1rem;
 }
 
@@ -104,7 +105,7 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid #e0e0e0;
     margin-top: auto; /* Push footer to bottom */
-    font-family: 'Georgia', serif;
+    font-family: 'EB Garamond', serif; /* Consistent with header */
 }
 
 footer a {
@@ -120,7 +121,7 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .tabs {
