@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Reset 1/5/2025 10:07AM*/
 * {
     margin: 0;
     padding: 0;
@@ -6,57 +6,56 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Professional serif font */
-    line-height: 1.6;
-    color: #333; /* Neutral text color */
-    background: #f8f9fa; /* Light gray background */
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    background: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 /* Header Styles */
 header {
-    background: #ffffff; /* White header */
-    color: #333; /* Neutral text color */
-    border-bottom: 2px solid #e0e0e0; /* Subtle bottom border */
-    text-align: center;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
     padding: 1rem 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 2rem;
     font-weight: normal;
+    color: #222;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
     list-style: none;
-    margin-top: 0.5rem;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    font-size: 1rem;
+    gap: 2rem;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #007BFF; /* Subtle blue link */
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #555;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: color 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: #0056b3; /* Slightly darker blue on hover */
+    color: #000;
 }
 
 /* Main Content */
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background: #ffffff; /* White content background */
-    border: 1px solid #e0e0e0; /* Subtle border */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 section {
@@ -65,48 +64,45 @@ section {
 
 section h2 {
     font-size: 1.5rem;
-    color: #007BFF; /* Academic blue */
+    color: #222;
     margin-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0; /* Thin underline */
+    border-bottom: 1px solid #ddd;
     padding-bottom: 0.2rem;
 }
 
 section p {
-    font-size: 1rem;
-    color: #555; /* Softer gray for body text */
     margin-top: 0.5rem;
-    text-align: justify; /* Justified text for professionalism */
+    font-size: 1rem;
+    color: #444;
 }
 
 /* Footer */
 footer {
+    background: #f4f4f4;
+    border-top: 1px solid #ddd;
+    color: #666;
     text-align: center;
-    background: #ffffff; /* Matches header for symmetry */
-    color: #555;
     padding: 1rem 0;
-    border-top: 2px solid #e0e0e0; /* Subtle top border */
     font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
+    margin-top: 2rem;
 }
 
 /* Links */
 a {
-    color: #007BFF; /* Consistent blue for links */
+    color: #007BFF;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     main {
