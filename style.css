@@ -97,6 +97,31 @@ main {
     }
 }
 
+/* Resume Section */
+.resume-link {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #0056b3;
+}
+
+.resume-embed {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
 /* Footer */
 footer {
     background-color: #f9f9f9;
@@ -133,5 +158,9 @@ footer a:hover {
     main {
         padding: 1rem;
         margin: 1rem;
+    }
+
+    .resume-embed {
+        height: 400px; /* Adjust resume height for smaller screens */
     }
 }
