@@ -8,22 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to Xiaorui Gu's Website</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#update">Updates</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="tabs">
+                <li><button class="tab-button active" data-tab="about">About Me</button></li>
+                <li><button class="tab-button" data-tab="update">Updates</button></li>
+                <li><button class="tab-button" data-tab="contact">Contact</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="tabs">
-            <button class="tab-button active" data-tab="about">About Me</button>
-            <button class="tab-button" data-tab="update">Updates</button>
-            <button class="tab-button" data-tab="contact">Contact</button>
-        </div>
-
         <div class="tab-content active" id="about">
             <h2>About Me</h2>
             <p>Hello! I'm in process of building this website.</p>
